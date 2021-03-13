@@ -8,6 +8,7 @@
     <properties>
         <java.version>11</java.version>
         <org.springframework.boot.version>${project.parent.version}</org.springframework.boot.version>
+        <org.springframework.kafka.version>2.3.8.RELEASE</org.springframework.kafka.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <springfox-version>2.9.2</springfox-version>
@@ -121,6 +122,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${org.projectlombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+            <version>${org.springframework.kafka.version}</version>
         </dependency>
     </dependencies>
 </project>
