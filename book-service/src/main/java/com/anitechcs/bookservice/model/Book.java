@@ -2,6 +2,9 @@ package com.anitechcs.bookservice.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.ElementCollection;
 import javax.persistence.Embedded;
@@ -16,6 +19,9 @@ import java.util.Objects;
 /**
  * Book
  */
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Entity
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen")
 public class Book {

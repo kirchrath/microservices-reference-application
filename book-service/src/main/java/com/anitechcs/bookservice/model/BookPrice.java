@@ -5,6 +5,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 import org.openapitools.jackson.nullable.JsonNullable;
 import javax.validation.Valid;
 import javax.validation.constraints.*;
@@ -12,6 +15,9 @@ import javax.validation.constraints.*;
 /**
  * Price of the book
  */
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @ApiModel(description = "Price of the book")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen")
 public class BookPrice   {
